@@ -11,4 +11,12 @@ p = Person(
   birthday = '2000-02-02',email='test@gmail.com',
   saraly=100000,memo='memomemo test',web_site='google.com'
 )
-p.save()
+# p.save()
+
+
+# class method create
+Person.objects.create(
+  first_name = 'Jiro',last_name= 'Sato',
+  birthday = '2000-02-02',email='test-jiro@gmail.com',
+  saraly=100000,memo='memomemo test',web_site='amazon.com'
+)
